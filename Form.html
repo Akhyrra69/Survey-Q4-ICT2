@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Life Sheet</title>
+    <link rel="icon" href="G6JJBU2h2MSwEUGakwGaoqg.ico" type="image/x-icon">
+    <style>
+                body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	    background-image: url("https://image.slidesdocs.com/responsive-images/docs/revised-memphis-style-poster-design-page-border-background-word-template_bc0c7d6931__1131_1600.jpg");
+	    background-repeat: no-repeat;
+	    background-size: cover;
+
+        }
+.input-checkbox {
+            width: 20px;
+            height: 20px;
+        }
+.input-radio {
+            width: 20px;
+            height: 20px;
+        }
+
+        .container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group textarea {
+            width: 85%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+
+        }
+
+        .form-group textarea {
+            height: 100px;
+        }
+
+        .form-group button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .form-group button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <br><h2>Questionnaire</h2>
+        <form id="myForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="text" id="age" name="age" required>
+            </div>
+            <div class="form-group">
+                <label for="occupation">Occupation:</label>
+                <input type="text" id="occupation" name="occupation" required>
+            </div>
+            <div class="form-group">
+                <label for="hobbies">Hobbies:</label>
+                <input type="text" id="hobbies" name="hobbies" required>
+            </div>
+            <div class="form-group">
+                <label for="education">Education:</label>
+                <input type="text" id="education" name="education" required>
+            </div>
+            <div class="form-group">
+                <label for="relationship-status">Relationship Status:</label>
+                <input type="text" id="relationship-status" name="relationship-status" required>
+            </div>
+            <div class="form-group">
+                <label for="health-status">Health Status:</label>
+                <input type="text" id="health-status" name="health-status" required>
+            </div>
+            <div class="form-group">
+                <label for="financial-status">Financial Status:</label>
+                <input type="text" id="financial-status" name="financial-status" required>
+            </div>
+            <div class="form-group">
+                <label for="life-goals">Life Goals:</label>
+                <textarea id="life-goals" name="life-goals" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+<script>
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent the form from submitting normally
+
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var age = document.getElementById('age').value;
+        var occupation = document.getElementById('occupation').value;
+        var hobbies = document.getElementById('hobbies').value;
+        var education = document.getElementById('education').value;
+        var relationship_status = document.getElementById('relationship-status').value;
+        var health_status = document.getElementById('health-status').value;
+        var financial_status = document.getElementById('financial-status').value;
+        var life_goals = document.getElementById('life-goals').value;
+
+        localStorage.setItem('name', name);
+        localStorage.setItem('email', email);
+        localStorage.setItem('age', age);
+        localStorage.setItem('occupation', occupation);
+        localStorage.setItem('hobbies', hobbies);
+        localStorage.setItem('education', education);
+        localStorage.setItem('relationship_status', relationship_status);
+        localStorage.setItem('health_status', health_status);
+        localStorage.setItem('financial_status', financial_status);
+        localStorage.setItem('life_goals', life_goals);
+
+        alert("Form submitted successfully!");
+    });
+</script>
+</body>
