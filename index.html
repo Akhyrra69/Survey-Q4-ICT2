@@ -90,7 +90,7 @@ font-size: 20px;
       </div>
       <div class="Question">
         <label for="Dream">Dream Job:</label>
-        <input type="text" id="DreamJob" name="DreamJob" placeholder="Enter your dream job" required>
+        <input type="text" id="Dream" name="Dream" placeholder="Enter your dream job" required>
       </div>
       <div class="Question">
         <label for="Inspiration">Who Inspires You the Most:</label>
@@ -124,7 +124,7 @@ font-size: 20px;
     document.getElementById('Gender').value = localStorage.getItem('Gender') || '';
     document.getElementById('Occupation').value = localStorage.getItem('Occupation') || '';
     document.getElementById('Hobbies').value = localStorage.getItem('Hobbies') || '';
-    document.getElementById('DreamJob').value = localStorage.getItem('DreamJob') || '';
+    document.getElementById('Dream').value = localStorage.getItem('DreamJob') || '';
     document.getElementById('Inspiration').value = localStorage.getItem('Inspiration') || '';
     document.getElementById('Goal').value = localStorage.getItem('Goal') || '';
     document.getElementById('Volunteer').value = localStorage.getItem('Volunteer') || '';
@@ -141,7 +141,7 @@ font-size: 20px;
     const Gender = document.getElementById('Gender').value;
     const Occupation = document.getElementById('Occupation').value;
     const Hobbies = document.getElementById('Hobbies').value;
-    const DreamJob = document.getElementById('DreamJob').value;
+    const DreamJob = document.getElementById('Dream').value;
     const Inspiration = document.getElementById('Inspiration').value;
     const Goal = document.getElementById('Goal').value;
     const Volunteer = document.getElementById('Volunteer').value;
@@ -153,7 +153,7 @@ font-size: 20px;
     localStorage.setItem('Gender', Gender);
     localStorage.setItem('Occupation', Occupation);
     localStorage.setItem('Hobbies', Hobbies);
-    localStorage.setItem('DreamJob', DreamJob);
+    localStorage.setItem('Dream', Dream);
     localStorage.setItem('Inspiration', Inspiration);
     localStorage.setItem('Goal', Goal);
     localStorage.setItem('Volunteer', Volunteer);
@@ -167,7 +167,7 @@ font-size: 20px;
       Gender,
       Occupation,
       Hobbies,
-      DreamJob,
+      Dream,
       Inspiration,
       Goal,
       Volunteer,
@@ -181,7 +181,7 @@ font-size: 20px;
     document.write(<p>Gender: ${Gender}</p>);
     document.write(<p>Occupation: ${Occupation}</p>);
     document.write(<p>Hobbies: ${Hobbies}</p>);
-    document.write(<p>Dream Job: ${DreamJob}</p>);
+    document.write(<p>Dream Job: ${Dream}</p>);
     document.write(<p>Inspiration: ${Inspiration}</p>);
     document.write(<p>Goal: ${Goal}</p>);
     document.write(<p>Volunteer: ${Volunteer}</p>);
